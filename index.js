@@ -6,7 +6,7 @@ const setShape = require('./lib/setShape.js')
 
 function createLogo(response) {
     const svg = setShape(response);
-    writeFile(fileName, svg, () => console.log('Generated logo.svg'))
+    fs.writeFile(fileName, svg, () => console.log('Generated logo.svg'))
 }
 
 
